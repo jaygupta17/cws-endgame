@@ -23,13 +23,20 @@ export const textTospeech = async (inp)=>{
 }
 
 export const textToimage = async (prom) =>{
- let res = await hf.textToImage({
-    inputs: prom,
-    model: 'stabilityai/stable-diffusion-2',
-    parameters: {
-      negative_prompt: "blurry",
-    }
-  })
+  try {
+    let res = await hf.textToImage({
+      inputs: prom,
+      model: 'stabilityai/stable-diffusion-xl-base-1.0',
+      parameters: {
+        negative_prompt: "blurry",
+      }
+    })
   return URL.createObjectURL(res)
+
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+
 }
 
