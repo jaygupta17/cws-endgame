@@ -15,7 +15,7 @@ export const textTotext =async (inp) =>{
 
 export const textTospeech = async (inp)=>{
   let res =await hf.textToSpeech({
-    model: 'espnet/kan-bayashi_ljspeech_vits',
+    model: 'suno/bark',
     inputs:inp
   })
   const source = URL.createObjectURL(res)
