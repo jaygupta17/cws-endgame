@@ -69,7 +69,7 @@ const MainHome = ()=>{
             <option className="bg-neutral-900"  value="textTospeech">
               text-to-speech
             </option>
-            <option className="bg-neutral-900"  value="textToimage">
+            <option className="bg-neutral-900"  value="textToimage" selected>
               text-to-image
             </option>
           </select>
