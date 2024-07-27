@@ -15,7 +15,7 @@ const PlsLogin = ()=>{
 const MainHome = ()=>{
   const [isLoading , setisLoading] =useState(false)
   const [result , setResult] = useState(<div className="text-white/75 md:text-3xl">Enter a prompt</div>)
-  const [mode , setMode] = useState('textTotext')
+  const [mode , setMode] = useState('textToimage')
   const [inp , setInp] = useState('')
   const [loader , setLoader] = useState(<BounceLoader color="#36d7b7"/>)
 
