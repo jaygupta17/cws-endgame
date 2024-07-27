@@ -3,7 +3,7 @@ import { HfInference } from '@huggingface/inference'
 
 
 const hf = new HfInference('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')
-const genAI = new GoogleGenerativeAI("AIzaSyAMsyF7lGZEk3eIS-4Nx0jTRw-PcmoHdkM");
+const genAI = new GoogleGenerativeAI("AIzaSyB0NhgGXtuTXHjuim3WrjCamcRucvVMOQk");
 
 export const textTotext =async (inp) =>{
     const model = genAI.getGenerativeModel({ model: "gemini-pro"});
